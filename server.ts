@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 import { Response, Request } from "express";
 
 const express = require("express");

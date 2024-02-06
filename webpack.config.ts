@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const webpack = require("webpack");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const path = require("path");
@@ -15,6 +16,10 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".ts", ".tsx"],
+    alias: {
+      hooks: path.resolve(__dirname, "src/hooks/"),
+      contexts: path.resolve(__dirname, "src/contexts/"),
+    },
   },
   module: {
     rules: [

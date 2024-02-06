@@ -1,5 +1,5 @@
 {
-  "name": "esbuild-project",
+  "name": "notes-project-frontend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -23,7 +23,6 @@
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
     "babel-loader": "^9.1.2",
-    "babel-plugin-direct-import": "^1.0.0",
     "eslint": "^8.37.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
@@ -37,10 +36,10 @@
     "webpack-hot-middleware": "^2.25.3"
   },
   "dependencies": {
-    "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.11.16",
-    "@mui/system": "^5.11.16",
+    "@atlaskit/modal-dialog": "^12.10.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router": "^6.22.0",
+    "react-router-dom": "^6.22.0"
   }
 }
