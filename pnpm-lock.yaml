@@ -5,21 +5,27 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@atlaskit/button':
+    specifier: ^17.3.0
+    version: 17.3.0(@types/react@16.14.56)(react@16.14.0)
+  '@atlaskit/icon':
+    specifier: ^22.0.0
+    version: 22.0.0(@types/react@16.14.56)(react@16.14.0)
   '@atlaskit/modal-dialog':
     specifier: ^12.10.5
-    version: 12.10.5(@types/react@18.2.54)(react-dom@18.2.0)(react@18.2.0)
+    version: 12.10.5(@types/react@16.14.56)(react-dom@16.14.0)(react@16.14.0)
   react:
-    specifier: ^18.2.0
-    version: 18.2.0
+    specifier: ^16.8.0
+    version: 16.14.0
   react-dom:
-    specifier: ^18.2.0
-    version: 18.2.0(react@18.2.0)
+    specifier: ^16.8.0
+    version: 16.14.0(react@16.14.0)
   react-router:
     specifier: ^6.22.0
-    version: 6.22.0(react@18.2.0)
+    version: 6.22.0(react@16.14.0)
   react-router-dom:
     specifier: ^6.22.0
-    version: 6.22.0(react-dom@18.2.0)(react@18.2.0)
+    version: 6.22.0(react-dom@16.14.0)(react@16.14.0)
 
 devDependencies:
   '@babel/core':
@@ -44,11 +50,11 @@ devDependencies:
     specifier: ^18.15.11
     version: 18.19.14
   '@types/react':
-    specifier: ^18.0.33
-    version: 18.2.54
+    specifier: ^16.8.0
+    version: 16.14.56
   '@types/react-dom':
-    specifier: ^18.0.11
-    version: 18.2.18
+    specifier: ^16.8.0
+    version: 16.9.24
   '@typescript-eslint/eslint-plugin':
     specifier: ^5.57.1
     version: 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.56.0)(typescript@5.3.3)
@@ -107,53 +113,76 @@ packages:
       '@jridgewell/trace-mapping': 0.3.22
     dev: true
 
-  /@atlaskit/analytics-next-stable-react-context@1.0.1(react@18.2.0):
+  /@atlaskit/analytics-next-stable-react-context@1.0.1(react@16.14.0):
     resolution: {integrity: sha512-iO6+hIp09dF4iAZQarVz3vKY1kM5Ij5CExYcK9jgc2q+OH8nv8n+BPFeJTdzGOGopmbUZn5Opj9pYQvge1Gr4Q==}
     peerDependencies:
       react: ^16.8.0
     dependencies:
-      react: 18.2.0
+      react: 16.14.0
       tslib: 2.6.2
     dev: false
 
-  /@atlaskit/analytics-next@9.1.4(react@18.2.0):
+  /@atlaskit/analytics-next@9.1.4(react@16.14.0):
     resolution: {integrity: sha512-UnoIlIQOOa4esHomlKPIBQs/5f4VFATIib97hADjGt5wAccmR080wJ63P0Ch1aHkbV6+AtSQfIefJnIYz6XXpQ==}
     peerDependencies:
       react: ^16.8.0
     dependencies:
-      '@atlaskit/analytics-next-stable-react-context': 1.0.1(react@18.2.0)
+      '@atlaskit/analytics-next-stable-react-context': 1.0.1(react@16.14.0)
       '@babel/runtime': 7.23.9
       prop-types: 15.8.1
-      react: 18.2.0
-      use-memo-one: 1.1.3(react@18.2.0)
+      react: 16.14.0
+      use-memo-one: 1.1.3(react@16.14.0)
     dev: false
 
-  /@atlaskit/app-provider@0.4.0(react@18.2.0):
+  /@atlaskit/app-provider@0.4.0(react@16.14.0):
     resolution: {integrity: sha512-ZvDVRSHD19rxKvx+YomWvekvtPzNbZEwYdHGXWG3QjdnP+1oBEeaVgkI9LnpWAoreunoQ8xUgmJ6g2qAYBjnoA==}
     peerDependencies:
       react: ^16.8.0
     dependencies:
-      '@atlaskit/tokens': 1.35.0(react@18.2.0)
+      '@atlaskit/tokens': 1.35.0(react@16.14.0)
       '@babel/runtime': 7.23.9
       bind-event-listener: 2.1.1
-      react: 18.2.0
+      react: 16.14.0
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /@atlaskit/blanket@13.0.0(@types/react@18.2.54)(react@18.2.0):
+  /@atlaskit/blanket@13.0.0(@types/react@16.14.56)(react@16.14.0):
     resolution: {integrity: sha512-v/aS5BCidzwHTnn7oDRMHNAfQX0EgLgYxRVEbbeXVvZ7E7vktpr/G4gIltP6Q0eFvXT6kfFh1u3VGqlQSBsbfg==}
     peerDependencies:
       react: ^16.8.0
     dependencies:
-      '@atlaskit/analytics-next': 9.1.4(react@18.2.0)
+      '@atlaskit/analytics-next': 9.1.4(react@16.14.0)
       '@atlaskit/codemod-utils': 4.2.3
-      '@atlaskit/ds-lib': 2.2.3(react@18.2.0)
-      '@atlaskit/theme': 12.6.2(react@18.2.0)
-      '@atlaskit/tokens': 1.35.0(react@18.2.0)
+      '@atlaskit/ds-lib': 2.2.3(react@16.14.0)
+      '@atlaskit/theme': 12.6.2(react@16.14.0)
+      '@atlaskit/tokens': 1.35.0(react@16.14.0)
       '@babel/runtime': 7.23.9
-      '@emotion/react': 11.11.3(@types/react@18.2.54)(react@18.2.0)
-      react: 18.2.0
+      '@emotion/react': 11.11.3(@types/react@16.14.56)(react@16.14.0)
+      react: 16.14.0
+    transitivePeerDependencies:
+      - '@types/react'
+      - supports-color
+    dev: false
+
+  /@atlaskit/button@17.3.0(@types/react@16.14.56)(react@16.14.0):
+    resolution: {integrity: sha512-Dp2x9gfANe5Aq5TdPn6bkauFrI3N3DYa73TCyg6nvVI3UT3nZAI30cuChzX2660UpdywEeOn2CeHjkryfyABJA==}
+    peerDependencies:
+      react: ^16.8.0
+    dependencies:
+      '@atlaskit/analytics-next': 9.1.4(react@16.14.0)
+      '@atlaskit/ds-lib': 2.2.3(react@16.14.0)
+      '@atlaskit/focus-ring': 1.3.6(@types/react@16.14.56)(react@16.14.0)
+      '@atlaskit/icon': 22.0.0(@types/react@16.14.56)(react@16.14.0)
+      '@atlaskit/interaction-context': 2.1.3(react@16.14.0)
+      '@atlaskit/primitives': 2.0.0(@types/react@16.14.56)(react@16.14.0)
+      '@atlaskit/spinner': 16.0.1(@types/react@16.14.56)(react@16.14.0)
+      '@atlaskit/theme': 12.6.2(react@16.14.0)
+      '@atlaskit/tokens': 1.35.0(react@16.14.0)
+      '@atlaskit/visually-hidden': 1.2.4(@types/react@16.14.56)(react@16.14.0)
+      '@babel/runtime': 7.23.9
+      '@emotion/react': 11.11.3(@types/react@16.14.56)(react@16.14.0)
+      react: 16.14.0
     transitivePeerDependencies:
       - '@types/react'
       - supports-color
@@ -165,97 +194,106 @@ packages:
       '@babel/runtime': 7.23.9
     dev: false
 
-  /@atlaskit/ds-lib@2.2.3(react@18.2.0):
+  /@atlaskit/ds-lib@2.2.3(react@16.14.0):
     resolution: {integrity: sha512-e+qn7miSyHDgMHP2zpHwDufalPKzRiaof9hd5WIskVs0BQpTR1bO2w7YkjMy5cMbYrQ+QYM64eiEv1SaDLCuIQ==}
     peerDependencies:
       react: ^16.8.0
     dependencies:
       '@babel/runtime': 7.23.9
       bind-event-listener: 2.1.1
-      react: 18.2.0
+      react: 16.14.0
     dev: false
 
-  /@atlaskit/focus-ring@1.3.6(@types/react@18.2.54)(react@18.2.0):
+  /@atlaskit/focus-ring@1.3.6(@types/react@16.14.56)(react@16.14.0):
     resolution: {integrity: sha512-uu4gRgOsPbqhs735JLjDDZk5z0tK+7ib83ZrLvlaJvkLBEPvsDWNmolvgKLEIDP/t8ihdt8lNWxNGS5QBTMBTQ==}
     peerDependencies:
       react: ^16.8.0
     dependencies:
-      '@atlaskit/tokens': 1.35.0(react@18.2.0)
+      '@atlaskit/tokens': 1.35.0(react@16.14.0)
       '@babel/runtime': 7.23.9
-      '@emotion/react': 11.11.3(@types/react@18.2.54)(react@18.2.0)
-      react: 18.2.0
+      '@emotion/react': 11.11.3(@types/react@16.14.56)(react@16.14.0)
+      react: 16.14.0
     transitivePeerDependencies:
       - '@types/react'
       - supports-color
     dev: false
 
-  /@atlaskit/icon@22.0.0(@types/react@18.2.54)(react@18.2.0):
+  /@atlaskit/icon@22.0.0(@types/react@16.14.56)(react@16.14.0):
     resolution: {integrity: sha512-90sfTQ7O6vehzNY8Qm2SCufwmQQ3A5Pw40yHBEHD5XeiJ0BaGY8fmzxx16JcqLxiUfyDlxml3rsKD++XzksOHg==}
     peerDependencies:
       react: ^16.8.0
     dependencies:
-      '@atlaskit/tokens': 1.35.0(react@18.2.0)
+      '@atlaskit/tokens': 1.35.0(react@16.14.0)
       '@babel/runtime': 7.23.9
-      '@emotion/react': 11.11.3(@types/react@18.2.54)(react@18.2.0)
-      react: 18.2.0
+      '@emotion/react': 11.11.3(@types/react@16.14.56)(react@16.14.0)
+      react: 16.14.0
     transitivePeerDependencies:
       - '@types/react'
       - supports-color
     dev: false
 
-  /@atlaskit/layering@0.2.3(react@18.2.0):
+  /@atlaskit/interaction-context@2.1.3(react@16.14.0):
+    resolution: {integrity: sha512-DtjzYa/8okEVeOnmr5npmUgmiwebAvVStd9LHz55HDcqgwd++ZKxCJQBqolTCjT/T5NR/cIz1LPVrNFygcjoXA==}
+    peerDependencies:
+      react: ^16.8.0
+    dependencies:
+      '@babel/runtime': 7.23.9
+      react: 16.14.0
+    dev: false
+
+  /@atlaskit/layering@0.2.3(react@16.14.0):
     resolution: {integrity: sha512-uuFYWr5ZQS4a+AtlNZT0UJKNJGwgAl4hSIYsHtvVQi6Ka0PVz6OnJ9xJyXoTHBYA6TtBhXw8m3bhAgxwd9KuBw==}
     peerDependencies:
       react: ^16.8.0
     dependencies:
-      '@atlaskit/ds-lib': 2.2.3(react@18.2.0)
+      '@atlaskit/ds-lib': 2.2.3(react@16.14.0)
       '@babel/runtime': 7.23.9
       bind-event-listener: 2.1.1
-      react: 18.2.0
+      react: 16.14.0
     dev: false
 
-  /@atlaskit/modal-dialog@12.10.5(@types/react@18.2.54)(react-dom@18.2.0)(react@18.2.0):
+  /@atlaskit/modal-dialog@12.10.5(@types/react@16.14.56)(react-dom@16.14.0)(react@16.14.0):
     resolution: {integrity: sha512-Y4KV/oObX6evNaQS0Q2KFiqeu0kHdMYRMXRpsdnO+VYvOfCTh2TZSJusHnT+JV0kRvJbH6Hn55kJ7eeGW/AjBA==}
     peerDependencies:
       react: ^16.8.0
     dependencies:
-      '@atlaskit/analytics-next': 9.1.4(react@18.2.0)
-      '@atlaskit/blanket': 13.0.0(@types/react@18.2.54)(react@18.2.0)
+      '@atlaskit/analytics-next': 9.1.4(react@16.14.0)
+      '@atlaskit/blanket': 13.0.0(@types/react@16.14.56)(react@16.14.0)
       '@atlaskit/codemod-utils': 4.2.3
-      '@atlaskit/ds-lib': 2.2.3(react@18.2.0)
-      '@atlaskit/focus-ring': 1.3.6(@types/react@18.2.54)(react@18.2.0)
-      '@atlaskit/icon': 22.0.0(@types/react@18.2.54)(react@18.2.0)
-      '@atlaskit/layering': 0.2.3(react@18.2.0)
-      '@atlaskit/motion': 1.5.1(@types/react@18.2.54)(react@18.2.0)
+      '@atlaskit/ds-lib': 2.2.3(react@16.14.0)
+      '@atlaskit/focus-ring': 1.3.6(@types/react@16.14.56)(react@16.14.0)
+      '@atlaskit/icon': 22.0.0(@types/react@16.14.56)(react@16.14.0)
+      '@atlaskit/layering': 0.2.3(react@16.14.0)
+      '@atlaskit/motion': 1.5.1(@types/react@16.14.56)(react@16.14.0)
       '@atlaskit/platform-feature-flags': 0.2.5
-      '@atlaskit/portal': 4.4.0(react-dom@18.2.0)(react@18.2.0)
-      '@atlaskit/primitives': 2.0.0(@types/react@18.2.54)(react@18.2.0)
-      '@atlaskit/theme': 12.6.2(react@18.2.0)
-      '@atlaskit/tokens': 1.35.0(react@18.2.0)
+      '@atlaskit/portal': 4.4.0(react-dom@16.14.0)(react@16.14.0)
+      '@atlaskit/primitives': 2.0.0(@types/react@16.14.56)(react@16.14.0)
+      '@atlaskit/theme': 12.6.2(react@16.14.0)
+      '@atlaskit/tokens': 1.35.0(react@16.14.0)
       '@babel/runtime': 7.23.9
-      '@emotion/react': 11.11.3(@types/react@18.2.54)(react@18.2.0)
+      '@emotion/react': 11.11.3(@types/react@16.14.56)(react@16.14.0)
       bind-event-listener: 2.1.1
       raf-schd: 4.0.3
-      react: 18.2.0
-      react-focus-lock: 2.9.7(@types/react@18.2.54)(react@18.2.0)
-      react-scrolllock: 5.0.1(react@18.2.0)
-      react-uid: 2.3.3(@types/react@18.2.54)(react@18.2.0)
+      react: 16.14.0
+      react-focus-lock: 2.9.7(@types/react@16.14.56)(react@16.14.0)
+      react-scrolllock: 5.0.1(react@16.14.0)
+      react-uid: 2.3.3(@types/react@16.14.56)(react@16.14.0)
     transitivePeerDependencies:
       - '@types/react'
       - react-dom
       - supports-color
     dev: false
 
-  /@atlaskit/motion@1.5.1(@types/react@18.2.54)(react@18.2.0):
+  /@atlaskit/motion@1.5.1(@types/react@16.14.56)(react@16.14.0):
     resolution: {integrity: sha512-GxTBzedd3fJTG4gZBXNFeev1dtMIkARBVzKrMTIh+K1MtZhwZSxNM+Lp9abvTGfNebWj2CpR/1Z/b03pCwP2ig==}
     peerDependencies:
       react: ^16.8.0
     dependencies:
-      '@atlaskit/ds-lib': 2.2.3(react@18.2.0)
+      '@atlaskit/ds-lib': 2.2.3(react@16.14.0)
       '@babel/runtime': 7.23.9
-      '@emotion/react': 11.11.3(@types/react@18.2.54)(react@18.2.0)
+      '@emotion/react': 11.11.3(@types/react@16.14.56)(react@16.14.0)
       bind-event-listener: 2.1.1
-      react: 18.2.0
+      react: 16.14.0
     transitivePeerDependencies:
       - '@types/react'
     dev: false
@@ -266,66 +304,94 @@ packages:
       '@babel/runtime': 7.23.9
     dev: false
 
-  /@atlaskit/portal@4.4.0(react-dom@18.2.0)(react@18.2.0):
+  /@atlaskit/portal@4.4.0(react-dom@16.14.0)(react@16.14.0):
     resolution: {integrity: sha512-/peuEGQt3W8qqsza8j/jGNuhE1SHkPXaXFww5DWr8lm22BhutTpHrHrOrkaSS9WOxgs0s1CZ+OixQFsHCJEiMQ==}
     peerDependencies:
       react: ^16.8.0
       react-dom: ^16.8.0
     dependencies:
-      '@atlaskit/theme': 12.6.2(react@18.2.0)
+      '@atlaskit/theme': 12.6.2(react@16.14.0)
       '@babel/runtime': 7.23.9
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 16.14.0
+      react-dom: 16.14.0(react@16.14.0)
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /@atlaskit/primitives@2.0.0(@types/react@18.2.54)(react@18.2.0):
+  /@atlaskit/primitives@2.0.0(@types/react@16.14.56)(react@16.14.0):
     resolution: {integrity: sha512-w+fsAsRI3gzp4AvYZBILaG859K/1poChfVY7vYJRxG5Sv6UTza558NDUQ1Z7N0UQn5EEMmWNH2x5KYelUuKvuw==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@atlaskit/app-provider': 0.4.0(react@18.2.0)
-      '@atlaskit/tokens': 1.35.0(react@18.2.0)
+      '@atlaskit/app-provider': 0.4.0(react@16.14.0)
+      '@atlaskit/tokens': 1.35.0(react@16.14.0)
       '@babel/runtime': 7.23.9
-      '@emotion/react': 11.11.3(@types/react@18.2.54)(react@18.2.0)
+      '@emotion/react': 11.11.3(@types/react@16.14.56)(react@16.14.0)
       '@emotion/serialize': 1.1.3
       bind-event-listener: 2.1.1
-      react: 18.2.0
+      react: 16.14.0
       tiny-invariant: 1.3.1
     transitivePeerDependencies:
       - '@types/react'
       - supports-color
     dev: false
 
-  /@atlaskit/theme@12.6.2(react@18.2.0):
+  /@atlaskit/spinner@16.0.1(@types/react@16.14.56)(react@16.14.0):
+    resolution: {integrity: sha512-mLSu5ppQkWWvp5ATZwGkRIWkR9L2JLg84OVF8UhlWuEN7pJj9nIIAz+1mSd/3yD5Y6lvLJUfQouHLm+1P6NeDQ==}
+    peerDependencies:
+      react: ^16.8.0
+    dependencies:
+      '@atlaskit/interaction-context': 2.1.3(react@16.14.0)
+      '@atlaskit/theme': 12.6.2(react@16.14.0)
+      '@atlaskit/tokens': 1.35.0(react@16.14.0)
+      '@babel/runtime': 7.23.9
+      '@emotion/react': 11.11.3(@types/react@16.14.56)(react@16.14.0)
+      react: 16.14.0
+    transitivePeerDependencies:
+      - '@types/react'
+      - supports-color
+    dev: false
+
+  /@atlaskit/theme@12.6.2(react@16.14.0):
     resolution: {integrity: sha512-xQOW7VspCzWiE2u/e9vi5zUg4YoUKXoO14qvoko6Oic8m/kVlJ1J1/veXV21udfDqU5WKGpabsou4kAdLxZ3Yw==}
     peerDependencies:
       react: ^16.8.0
     dependencies:
       '@atlaskit/codemod-utils': 4.2.3
-      '@atlaskit/ds-lib': 2.2.3(react@18.2.0)
-      '@atlaskit/tokens': 1.35.0(react@18.2.0)
+      '@atlaskit/ds-lib': 2.2.3(react@16.14.0)
+      '@atlaskit/tokens': 1.35.0(react@16.14.0)
       '@babel/runtime': 7.23.9
-      react: 18.2.0
+      react: 16.14.0
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /@atlaskit/tokens@1.35.0(react@18.2.0):
+  /@atlaskit/tokens@1.35.0(react@16.14.0):
     resolution: {integrity: sha512-+3rA9yiOWn+5jv+Nmw8hIigw0CEAR81wFkGd5Q02zuaoQOpABhNF6JTj+GR54tHHwld3//LxINau6N3aVwPWWQ==}
     peerDependencies:
       react: ^16.8.0
     dependencies:
-      '@atlaskit/ds-lib': 2.2.3(react@18.2.0)
+      '@atlaskit/ds-lib': 2.2.3(react@16.14.0)
       '@atlaskit/platform-feature-flags': 0.2.5
       '@babel/runtime': 7.23.9
       '@babel/traverse': 7.23.9
       '@babel/types': 7.23.9
       bind-event-listener: 2.1.1
-      react: 18.2.0
+      react: 16.14.0
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@atlaskit/visually-hidden@1.2.4(@types/react@16.14.56)(react@16.14.0):
+    resolution: {integrity: sha512-rTk7sF2YrLJguv2deIezJ6kWAPBDt4rkBx1wQ5o+Eyffygb4p3iJKpD0hZC/q6FHt6p3wkklu7KqYyiSduJxSg==}
+    peerDependencies:
+      react: ^16.8.0
+    dependencies:
+      '@babel/runtime': 7.23.9
+      '@emotion/react': 11.11.3(@types/react@16.14.56)(react@16.14.0)
+      react: 16.14.0
+    transitivePeerDependencies:
+      - '@types/react'
     dev: false
 
   /@babel/code-frame@7.23.5:
@@ -1631,7 +1697,7 @@ packages:
     resolution: {integrity: sha512-W2P2c/VRW1/1tLox0mVUalvnWXxavmv/Oum2aPsRcoDJuob75FC3Y8FbpfLwUegRcxINtGUMPq0tFCvYNTBXNA==}
     dev: false
 
-  /@emotion/react@11.11.3(@types/react@18.2.54)(react@18.2.0):
+  /@emotion/react@11.11.3(@types/react@16.14.56)(react@16.14.0):
     resolution: {integrity: sha512-Cnn0kuq4DoONOMcnoVsTOR8E+AdnKFf//6kUWc4LCdnxj31pZWn7rIULd6Y7/Js1PiPHzn7SKCM9vB/jBni8eA==}
     peerDependencies:
       '@types/react': '*'
@@ -1644,12 +1710,12 @@ packages:
       '@emotion/babel-plugin': 11.11.0
       '@emotion/cache': 11.11.0
       '@emotion/serialize': 1.1.3
-      '@emotion/use-insertion-effect-with-fallbacks': 1.0.1(react@18.2.0)
+      '@emotion/use-insertion-effect-with-fallbacks': 1.0.1(react@16.14.0)
       '@emotion/utils': 1.2.1
       '@emotion/weak-memoize': 0.3.1
-      '@types/react': 18.2.54
+      '@types/react': 16.14.56
       hoist-non-react-statics: 3.3.2
-      react: 18.2.0
+      react: 16.14.0
     dev: false
 
   /@emotion/serialize@1.1.3:
@@ -1670,12 +1736,12 @@ packages:
     resolution: {integrity: sha512-KOEGMu6dmJZtpadb476IsZBclKvILjopjUii3V+7MnXIQCYh8W3NgNcgwo21n9LXZX6EDIKvqfjYxXebDwxKmQ==}
     dev: false
 
-  /@emotion/use-insertion-effect-with-fallbacks@1.0.1(react@18.2.0):
+  /@emotion/use-insertion-effect-with-fallbacks@1.0.1(react@16.14.0):
     resolution: {integrity: sha512-jT/qyKZ9rzLErtrjGgdkMBn2OP8wl0G3sQlBb3YPryvKHsjvINUhVaPFfP+fpBcOkmrVOVEEHQFJ7nbj2TH2gw==}
     peerDependencies:
       react: '>=16.8.0'
     dependencies:
-      react: 18.2.0
+      react: 16.14.0
     dev: false
 
   /@emotion/utils@1.2.1:
@@ -1950,14 +2016,14 @@ packages:
     resolution: {integrity: sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ==}
     dev: true
 
-  /@types/react-dom@18.2.18:
-    resolution: {integrity: sha512-TJxDm6OfAX2KJWJdMEVTwWke5Sc/E/RlnPGvGfS0W7+6ocy2xhDVQVh/KvC2Uf7kACs+gDytdusDSdWfWkaNzw==}
+  /@types/react-dom@16.9.24:
+    resolution: {integrity: sha512-Gcmq2JTDheyWn/1eteqyzzWKSqDjYU6KYsIvH7thb7CR5OYInAWOX+7WnKf6PaU/cbdOc4szJItcDEJO7UGmfA==}
     dependencies:
-      '@types/react': 18.2.54
+      '@types/react': 16.14.56
     dev: true
 
-  /@types/react@18.2.54:
-    resolution: {integrity: sha512-039k+vrVJymDoe2y+HLk3O3oI3sa+C8KNjuDKofqrIJK26ramnqLNj9VJTaxAzFGMvpW/79HrrAJapHzpQ9fGQ==}
+  /@types/react@16.14.56:
+    resolution: {integrity: sha512-MxuHB7dvVm5yOxRr7hJoonLG0JY8YvqZtaQ9Quirp3Oe4FLFjAgxkxsKE6IspdHPpRVZKo2ZoDEravWO81EeYA==}
     dependencies:
       '@types/prop-types': 15.7.11
       '@types/scheduler': 0.16.8
@@ -4265,26 +4331,28 @@ packages:
       unpipe: 1.0.0
     dev: true
 
-  /react-clientside-effect@1.2.6(react@18.2.0):
+  /react-clientside-effect@1.2.6(react@16.14.0):
     resolution: {integrity: sha512-XGGGRQAKY+q25Lz9a/4EPqom7WRjz3z9R2k4jhVKA/puQFH/5Nt27vFZYql4m4NVNdUvX8PS3O7r/Zzm7cjUlg==}
     peerDependencies:
       react: ^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
     dependencies:
       '@babel/runtime': 7.23.9
-      react: 18.2.0
+      react: 16.14.0
     dev: false
 
-  /react-dom@18.2.0(react@18.2.0):
-    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
+  /react-dom@16.14.0(react@16.14.0):
+    resolution: {integrity: sha512-1gCeQXDLoIqMgqD3IO2Ah9bnf0w9kzhwN5q4FGnHZ67hBm9yePzB5JJAIQCc8x3pFnNlwFq4RidZggNAAkzWWw==}
     peerDependencies:
-      react: ^18.2.0
+      react: ^16.14.0
     dependencies:
       loose-envify: 1.4.0
-      react: 18.2.0
-      scheduler: 0.23.0
+      object-assign: 4.1.1
+      prop-types: 15.8.1
+      react: 16.14.0
+      scheduler: 0.19.1
     dev: false
 
-  /react-focus-lock@2.9.7(@types/react@18.2.54)(react@18.2.0):
+  /react-focus-lock@2.9.7(@types/react@16.14.56)(react@16.14.0):
     resolution: {integrity: sha512-EfhX040SELLqnQ9JftqsmQCG49iByg8F5X5m19Er+n371OaETZ35dlNPZrLOOTlnnwD4c2Zv0KDgabDTc7dPHw==}
     peerDependencies:
       '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -4294,13 +4362,13 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.23.9
-      '@types/react': 18.2.54
+      '@types/react': 16.14.56
       focus-lock: 1.0.0
       prop-types: 15.8.1
-      react: 18.2.0
-      react-clientside-effect: 1.2.6(react@18.2.0)
-      use-callback-ref: 1.3.1(@types/react@18.2.54)(react@18.2.0)
-      use-sidecar: 1.1.2(@types/react@18.2.54)(react@18.2.0)
+      react: 16.14.0
+      react-clientside-effect: 1.2.6(react@16.14.0)
+      use-callback-ref: 1.3.1(@types/react@16.14.56)(react@16.14.0)
+      use-sidecar: 1.1.2(@types/react@16.14.56)(react@16.14.0)
     dev: false
 
   /react-is@16.13.1:
@@ -4311,7 +4379,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /react-router-dom@6.22.0(react-dom@18.2.0)(react@18.2.0):
+  /react-router-dom@6.22.0(react-dom@16.14.0)(react@16.14.0):
     resolution: {integrity: sha512-z2w+M4tH5wlcLmH3BMMOMdrtrJ9T3oJJNsAlBJbwk+8Syxd5WFJ7J5dxMEW0/GEXD1BBis4uXRrNIz3mORr0ag==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -4319,31 +4387,31 @@ packages:
       react-dom: '>=16.8'
     dependencies:
       '@remix-run/router': 1.15.0
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      react-router: 6.22.0(react@18.2.0)
+      react: 16.14.0
+      react-dom: 16.14.0(react@16.14.0)
+      react-router: 6.22.0(react@16.14.0)
     dev: false
 
-  /react-router@6.22.0(react@18.2.0):
+  /react-router@6.22.0(react@16.14.0):
     resolution: {integrity: sha512-q2yemJeg6gw/YixRlRnVx6IRJWZD6fonnfZhN1JIOhV2iJCPeRNSH3V1ISwHf+JWcESzLC3BOLD1T07tmO5dmg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
     dependencies:
       '@remix-run/router': 1.15.0
-      react: 18.2.0
+      react: 16.14.0
     dev: false
 
-  /react-scrolllock@5.0.1(react@18.2.0):
+  /react-scrolllock@5.0.1(react@16.14.0):
     resolution: {integrity: sha512-poeEsjnZAlpA6fJlaNo4rZtcip2j6l5mUGU/SJe1FFlicEudS943++u7ZSdA7lk10hoyYK3grOD02/qqt5Lxhw==}
     peerDependencies:
       react: ^16.3.0
     dependencies:
       exenv: 1.2.2
-      react: 18.2.0
+      react: 16.14.0
     dev: false
 
-  /react-uid@2.3.3(@types/react@18.2.54)(react@18.2.0):
+  /react-uid@2.3.3(@types/react@16.14.56)(react@16.14.0):
     resolution: {integrity: sha512-iNpDovcb9qBpBTo8iUgqRSQOS8GV3bWoNaTaUptHkXtAooXSo0OWe7vN6TqqB8x3x0bNBbQx96kkmSltQ5h9kQ==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -4353,16 +4421,18 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/react': 18.2.54
-      react: 18.2.0
+      '@types/react': 16.14.56
+      react: 16.14.0
       tslib: 2.6.2
     dev: false
 
-  /react@18.2.0:
-    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+  /react@16.14.0:
+    resolution: {integrity: sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==}
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
+      object-assign: 4.1.1
+      prop-types: 15.8.1
     dev: false
 
   /rechoir@0.8.0:
@@ -4516,10 +4586,11 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
-  /scheduler@0.23.0:
-    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
+  /scheduler@0.19.1:
+    resolution: {integrity: sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==}
     dependencies:
       loose-envify: 1.4.0
+      object-assign: 4.1.1
     dev: false
 
   /schema-utils@3.3.0:
@@ -4994,7 +5065,7 @@ packages:
       punycode: 2.3.1
     dev: true
 
-  /use-callback-ref@1.3.1(@types/react@18.2.54)(react@18.2.0):
+  /use-callback-ref@1.3.1(@types/react@16.14.56)(react@16.14.0):
     resolution: {integrity: sha512-Lg4Vx1XZQauB42Hw3kK7JM6yjVjgFmFC5/Ab797s79aARomD2nEErc4mCgM8EZrARLmmbWpi5DGCadmK50DcAQ==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -5004,20 +5075,20 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/react': 18.2.54
-      react: 18.2.0
+      '@types/react': 16.14.56
+      react: 16.14.0
       tslib: 2.6.2
     dev: false
 
-  /use-memo-one@1.1.3(react@18.2.0):
+  /use-memo-one@1.1.3(react@16.14.0):
     resolution: {integrity: sha512-g66/K7ZQGYrI6dy8GLpVcMsBp4s17xNkYJVSMvTEevGy3nDxHOfE6z8BVE22+5G5x7t3+bhzrlTDB7ObrEE0cQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      react: 18.2.0
+      react: 16.14.0
     dev: false
 
-  /use-sidecar@1.1.2(@types/react@18.2.54)(react@18.2.0):
+  /use-sidecar@1.1.2(@types/react@16.14.56)(react@16.14.0):
     resolution: {integrity: sha512-epTbsLuzZ7lPClpz2TyryBfztm7m+28DlEv2ZCQ3MDr5ssiwyOwGH/e5F9CkfWjJ1t4clvI58yF822/GUkjjhw==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -5027,9 +5098,9 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/react': 18.2.54
+      '@types/react': 16.14.56
       detect-node-es: 1.1.0
-      react: 18.2.0
+      react: 16.14.0
       tslib: 2.6.2
     dev: false
 
