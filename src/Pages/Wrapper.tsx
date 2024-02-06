@@ -9,6 +9,7 @@ export const Wrapper = () => {
   return (
     <ApplicationContext.Provider value={{ showDialog }}>
       <Outlet />
+      <h2>Hello h2</h2>
       {modals.length !== 0 &&
         modals.map((modal) => (
           <React.Fragment key={modal.id}>{modal.component}</React.Fragment>
