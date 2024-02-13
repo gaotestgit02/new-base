@@ -1,26 +1,32 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import { Wrapper } from "./Wrapper";
 import { PageLayout } from "./PageLayout/PageLayout";
-// const a = "hello";
+import { Notes } from "./Notes/Notes";
+
+const client = new ApolloClient({
+  uri: "http://localhost:4000/graphql",
+  cache: new InMemoryCache(),
+});
 
 function NotFound() {
   return <div>Not found</div>;
 }
 
-const Home = () => <h3>This is wha it is</h3>;
-
 export const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Wrapper />}>
-          <Route element={<PageLayout />}>
-            <Route index element={<Home />} />
+    <ApolloProvider client={client}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Wrapper />}>
+            <Route element={<PageLayout />}>
+              <Route index element={<Notes />} />
+            </Route>
           </Route>
-        </Route>
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </Router>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Router>
+    </ApolloProvider>
   );
 };

@@ -1,0 +1,11 @@
+query AllNotes {
+  notes {
+    id
+    title
+    description
+    tags {
+      id
+      name
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 // eslint-disable-next-line react/no-deprecated
 import { render } from "react-dom";
+import "@atlaskit/css-reset";
 
 import { App } from "./Pages/App";
 
